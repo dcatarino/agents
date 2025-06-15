@@ -3,7 +3,7 @@ from typing import Dict
 
 import sendgrid
 from sendgrid.helpers.mail import Email, Mail, Content, To
-from agents import Agent, function_tool
+from claude_agents import ClaudeAgent, function_tool
 
 @function_tool
 def send_email(subject: str, html_body: str) -> Dict[str, str]:
@@ -21,9 +21,9 @@ INSTRUCTIONS = """You are able to send a nicely formatted HTML email based on a 
 You will be provided with a detailed report. You should use your tool to send one email, providing the 
 report converted into clean, well presented HTML with an appropriate subject line."""
 
-email_agent = Agent(
+email_agent = ClaudeAgent(
     name="Email agent",
     instructions=INSTRUCTIONS,
     tools=[send_email],
-    model="gpt-4o-mini",
+    model="claude-3-5-sonnet-20241022",
 )

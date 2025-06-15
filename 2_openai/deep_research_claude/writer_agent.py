@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from agents import Agent
+from claude_agents import ClaudeAgent
 
 INSTRUCTIONS = (
     "You are a senior researcher tasked with writing a cohesive report for a research query. "
@@ -19,9 +19,10 @@ class ReportData(BaseModel):
     follow_up_questions: list[str] = Field(description="Suggested topics to research further")
 
 
-writer_agent = Agent(
+writer_agent = ClaudeAgent(
     name="WriterAgent",
     instructions=INSTRUCTIONS,
-    model="gpt-4o-mini",
+    model="claude-3-5-sonnet-20241022",
     output_type=ReportData,
+    max_tokens=8000,
 )

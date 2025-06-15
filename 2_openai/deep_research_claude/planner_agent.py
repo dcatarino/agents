@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from agents import Agent
+from claude_agents import ClaudeAgent
 
 HOW_MANY_SEARCHES = 5
 
@@ -15,9 +15,9 @@ class WebSearchItem(BaseModel):
 class WebSearchPlan(BaseModel):
     searches: list[WebSearchItem] = Field(description="A list of web searches to perform to best answer the query.")
     
-planner_agent = Agent(
+planner_agent = ClaudeAgent(
     name="PlannerAgent",
     instructions=INSTRUCTIONS,
-    model="gpt-4o-mini",
+    model="claude-3-5-sonnet-20241022",
     output_type=WebSearchPlan,
 )

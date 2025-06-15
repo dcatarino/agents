@@ -1,4 +1,4 @@
-from agents import Runner, trace, gen_trace_id
+from claude_agents import Runner, trace, gen_trace_id
 from search_agent import search_agent
 from planner_agent import planner_agent, WebSearchItem, WebSearchPlan
 from writer_agent import writer_agent, ReportData
@@ -11,8 +11,8 @@ class ResearchManager:
         """ Run the deep research process, yielding the status updates and the final report"""
         trace_id = gen_trace_id()
         with trace("Research trace", trace_id=trace_id):
-            print(f"View trace: https://platform.openai.com/traces/trace?trace_id={trace_id}")
-            yield f"View trace: https://platform.openai.com/traces/trace?trace_id={trace_id}"
+            print(f"Research trace ID: {trace_id}")
+            yield f"Research trace ID: {trace_id}"
             print("Starting research...")
             search_plan = await self.plan_searches(query)
             yield "Searches planned, starting to search..."     

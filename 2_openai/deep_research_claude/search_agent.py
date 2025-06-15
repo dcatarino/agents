@@ -1,4 +1,4 @@
-from agents import Agent, WebSearchTool, ModelSettings
+from claude_agents import ClaudeAgent, WebSearchTool
 
 INSTRUCTIONS = (
     "You are a research assistant. Given a search term, you search the web for that term and "
@@ -8,10 +8,9 @@ INSTRUCTIONS = (
     "essence and ignore any fluff. Do not include any additional commentary other than the summary itself."
 )
 
-search_agent = Agent(
+search_agent = ClaudeAgent(
     name="Search agent",
     instructions=INSTRUCTIONS,
     tools=[WebSearchTool(search_context_size="low")],
-    model="gpt-4o-mini",
-    model_settings=ModelSettings(tool_choice="required"),
+    model="claude-3-5-sonnet-20241022",
 )
