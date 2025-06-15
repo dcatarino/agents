@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'motion': 'There needs to be strict laws to regulate LLMs',
+        'motion': 'Less state intervation benefits the people and creates a more prospererous economy, less state doesn''t mean no government, it means less government intervention in the economy still with some government few strategic sectors',
     }
     
     try:
