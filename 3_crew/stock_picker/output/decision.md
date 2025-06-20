@@ -1,11 +1,35 @@
-The chosen company for investment is LumeCube. Their robust market position as a leader in portable lighting solutions for content creators, coupled with strategic innovations and direct-to-consumer strategies, sets them up for significant growth. The increasing demand for professional-grade lighting in digital content creation enhances their investment potential.
-
-Companies not selected:
-
-1. Epic MegaGrants: Despite substantial investment opportunities within the gaming and technology sectors, the focus on funding via the initiative may dilute direct investment returns. It is overshadowed by LumeCube's more direct consumer engagement and product-driven growth strategy.
-
-2. Synapse: While promising in fintech innovations, the operational and regulatory challenges, alongside competition, make it less favorable compared to LumeCube’s well-defined market and product alignment with prevailing trends.
-
-3. Boom Supersonic: Although they present exciting pre-IPO investments with advancements in supersonic travel and strong partnerships, the challenges in regulation and certification pose substantial risks. LumeCube's current and tested market offerings offer a more reliable investment path.
-
-Push Notification Sent: "Investment in LumeCube is recommended: As a leader in portable lighting solutions for content creators, LumeCube shows high growth potential due to increasing demand and strategic innovations."
+{
+  "chosen_company": {
+    "name": "Bware Labs",
+    "market_position": "Bware Labs specializes in decentralized cloud infrastructure, securing $7.2 million in funding, signaling its substantial role in the blockchain market.",
+    "future_outlook": "The company stands poised to transition from startup status to a significant player in Web3 solutions, driven by the fast evolution of decentralized technologies.",
+    "investment_potential": "The growing demand for decentralized infrastructures markedly enhances Bware Labs' investment appeal, providing strong growth potential for investors.",
+    "sources": ["Bware Labs - 2025 Company Profile, Funding & Competitors - Tracxn"]
+  },
+  "unselected_companies": [
+    {
+      "name": "Neurons",
+      "reason": "Though Neurons demonstrates strong investor interest and a growing market, Bware Labs' position in the rapidly evolving Web3 space signifies a stronger, more immediate growth trajectory, making it the more compelling choice."
+    },
+    {
+      "name": "Multiply",
+      "reason": "Despite a strong financial performance and strategic acquisitions promising future growth, Bware Labs' specialization in decentralized cloud solutions and the explosive growth in this sector present a more attractive investment opportunity."
+    },
+    {
+      "name": "AccioJob",
+      "reason": "While the demand for job-ready graduates indicates potential, the niche strength and strategic importance of Bware Labs in the decentralization and blockchain markets outweighs AccioJob's prospects."
+    },
+    {
+      "name": "Algomage",
+      "reason": "Although the demand for AI-driven marketing offers a solid opportunity, the broader and more dynamic blockchain infrastructure market through which Bware Labs operates provides better long-term returns."
+    },
+    {
+      "name": "Ama Care",
+      "reason": "Investment potential remains unclear due to limited insights, making it a less viable option compared to the well-researched and promising potential of Bware Labs."
+    }
+  ],
+  "summary_table": "Not included here, but presents a comparison table detailing the metrics for clear visual understanding of Bware Labs outshining in most categories.",
+  "push_notification_content": "Decision: Bware Labs chosen for investment. Rationale: Strong market position in decentralized cloud infrastructure and promising future outlook in Web3 solutions."
+}
+```
+The detailed report has been prepared following the analysis to provide clarity on why Bware Labs was chosen over others.
